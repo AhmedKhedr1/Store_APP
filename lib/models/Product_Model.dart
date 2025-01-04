@@ -3,7 +3,7 @@ import 'package:store_app/models/Rating_Model.dart';
 class ProductModel {
   final int id;
   final String title;
-  final double price;
+  final double  price;
   final String description;
   final String category;
   final String image;
@@ -18,14 +18,14 @@ class ProductModel {
       required this.category,
       required this.image});
 
-  factory ProductModel.fromJson(jsondat) {
+  factory ProductModel.fromJson(jsondata) {
     return ProductModel(
-        id: jsondat['id'],
-        title: jsondat['title'],
-        price: jsondat['price'],
-        description: jsondat['description'],
-        category: jsondat['category'],
-        image: jsondat['image'],
-        rating: RatingModel.fromJson(jsondat['rating']));
+        id: jsondata['id'],
+        title: jsondata['title'],
+        price: jsondata['price'],
+        description: jsondata['description'],
+        category: jsondata['category'],
+        image: jsondata['image'],
+        rating: RatingModel.fromJson(jsondata['rating']));
   }
 }
