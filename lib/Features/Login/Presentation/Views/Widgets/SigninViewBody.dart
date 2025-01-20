@@ -4,6 +4,7 @@ import 'package:store_app/Constant.dart';
 import 'package:store_app/Features/Login/Presentation/Views/Widgets/CustomButton.dart';
 import 'package:store_app/Features/Login/Presentation/Views/Widgets/CustomTextFormField.dart';
 import 'package:store_app/core/utils/AppRouter.dart';
+import 'package:store_app/core/utils/Assets.dart';
 
 class Signinviewbody extends StatelessWidget {
   const Signinviewbody({super.key});
@@ -35,7 +36,7 @@ class Signinviewbody extends StatelessWidget {
                   hinttext: 'Email Address',
                   controller: TextEditingController(),
                 ),
-                
+
                 CustomTextFormField(
                   hinttext: 'Password',
                   controller: TextEditingController(),
@@ -62,15 +63,63 @@ class Signinviewbody extends StatelessWidget {
                       },
                       child: Text(
                         ' Create One',
-                        style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+                        style: TextStyle(
+                            fontSize: 15, fontWeight: FontWeight.bold),
                       ),
                     ),
                   ],
                 ),
-            
+                SizedBox(
+                  height: 40,
+                ),
+                CustomRegisterButton(
+                    Buttontext: 'Continue With Apple',
+                    Buttonimage: Assets.kAppleLogo),
+                CustomRegisterButton(
+                    Buttontext: 'Continue With Google',
+                    Buttonimage: Assets.kGoogleLogo),
+                CustomRegisterButton(
+                    Buttontext: 'Continue With Facebook',
+                    Buttonimage: Assets.kFaceBookLogo),
               ],
             ),
           ],
+        ),
+      ),
+    );
+  }
+}
+
+class CustomRegisterButton extends StatelessWidget {
+  CustomRegisterButton(
+      {super.key, required this.Buttontext, required this.Buttonimage});
+  final String Buttontext;
+  final String Buttonimage;
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 6),
+      child: Container(
+        height: 50,
+        decoration: BoxDecoration(
+            color: Colors.grey.withOpacity(0.2),
+            borderRadius: BorderRadius.circular(100)),
+        child: Padding(
+          padding: const EdgeInsets.only(left: 20),
+          child: Row(
+            children: [
+              Image.asset(
+                Buttonimage,
+              ),
+              SizedBox(
+                width: 40,
+              ),
+              Text(
+                Buttontext,
+                style: TextStyle(fontWeight: FontWeight.w600, fontSize: 16),
+              )
+            ],
+          ),
         ),
       ),
     );
