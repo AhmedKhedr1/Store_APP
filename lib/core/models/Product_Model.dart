@@ -1,4 +1,6 @@
-import 'package:store_app/models/Rating_Model.dart';
+// ignore_for_file: file_names
+
+import 'package:store_app/core/models/Rating_Model.dart';
 
 class ProductModel {
   final int id;

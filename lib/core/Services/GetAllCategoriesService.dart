@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:store_app/Helper/Api.dart';
+import 'package:store_app/core/Helper/Api.dart';
 
 class Getallcategoriesservice {
   Dio dio = Dio();

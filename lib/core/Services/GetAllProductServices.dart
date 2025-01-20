@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
-import 'package:store_app/Helper/Api.dart';
-import 'package:store_app/models/Product_Model.dart';
+import 'package:store_app/core/Helper/Api.dart';
+import 'package:store_app/core/models/Product_Model.dart';
 
 class GetAllProductServices {
   final dio = Dio();
