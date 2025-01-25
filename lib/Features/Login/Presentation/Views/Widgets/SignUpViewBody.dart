@@ -50,7 +50,11 @@ class Signupviewbody extends StatelessWidget {
                 SizedBox(
                   height: 30,
                 ),
-                CustomButton(),
+                CustomButton(
+                  onPressed: () {
+                    GoRouter.of(context).push(Approuter.KSigninView);
+                  },
+                ),
                 SizedBox(
                   height: 30,
                 ),

@@ -44,7 +44,9 @@ class Signinviewbody extends StatelessWidget {
                 SizedBox(
                   height: 16,
                 ),
-                CustomButton(),
+                CustomButton(onPressed: () {
+                  GoRouter.of(context).push(Approuter.KHomeView);
+                },),
                 //Text button
                 SizedBox(
                   height: 16,
