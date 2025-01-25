@@ -10,16 +10,25 @@ class customAppBar extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
+        CircleAvatar(
+          radius: 20,
+          backgroundImage: AssetImage(
+            Assets.KprofileImage,
+          ), // Replace with your image path
+        ),
         Container(
+          height: 40,
+          width: 40,
           decoration: BoxDecoration(
             color: KPrimaryColor,
-            borderRadius: BorderRadius.circular(25),
+            borderRadius: BorderRadius.circular(28),
           ),
           child: IconButton(
             onPressed: () {},
             icon: Icon(
               Icons.shopping_bag_outlined,
               color: Colors.white,
+              size: 18,
             ),
           ),
         )
