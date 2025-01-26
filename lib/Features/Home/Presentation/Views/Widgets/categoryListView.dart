@@ -3,15 +3,15 @@ import 'package:flutter/material.dart';
 import 'package:store_app/core/utils/Assets.dart';
 
 class categoryListView extends StatelessWidget {
-  const categoryListView({super.key});
-
+ categoryListView({super.key, required this.scrollDirection});
+final Axis scrollDirection ;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 110,
+      height: 100,
       width: double.infinity,
       child: ListView.builder(
-        scrollDirection: Axis.horizontal,
+        scrollDirection: scrollDirection,
         itemCount: 10,
         itemBuilder: (context, index) {
           return Padding(
