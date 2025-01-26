@@ -13,7 +13,7 @@ class customAppBar extends StatelessWidget {
         CircleAvatar(
           radius: 20,
           backgroundImage: AssetImage(
-            Assets.KprofileImage,
+            Assets.KNoprofileImage,
           ), // Replace with your image path
         ),
         Container(

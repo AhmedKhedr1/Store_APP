@@ -21,7 +21,7 @@ final Axis scrollDirection ;
                 CircleAvatar(
                   radius: 28,
                   backgroundImage: AssetImage(
-                    Assets.KprofileImage,
+                    Assets.KNoprofileImage,
                   ), // Replace with your image path
                 ),
                 SizedBox(
