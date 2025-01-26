@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:store_app/Features/Login/Presentation/Views/Widgets/CustomButton.dart';
 import 'package:store_app/Features/Login/Presentation/Views/Widgets/CustomTextFormField.dart';
+import 'package:store_app/core/Widgets/CustomBackIcon.dart';
 import 'package:store_app/core/utils/AppRouter.dart';
 
 class Signupviewbody extends StatelessWidget {
@@ -17,17 +18,7 @@ class Signupviewbody extends StatelessWidget {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Container(
-                  decoration: BoxDecoration(
-                    color: Colors.grey[200], // Background color
-                    shape: BoxShape.circle, // Makes the container circular
-                  ),
-                  child: IconButton(
-                      onPressed: () {
-                        GoRouter.of(context).pop();
-                      },
-                      icon: Icon(Icons.arrow_back_ios)),
-                ),
+                CustomBackIcon(),
                 SizedBox(
                   height: 20,
                 ),

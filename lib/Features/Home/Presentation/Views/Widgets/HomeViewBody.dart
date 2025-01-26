@@ -36,22 +36,27 @@ class _HomeviewbodyState extends State<Homeviewbody> {
             Column(
               children: [
                 CustomRow(
-                  text: 'Categories', onTap: () { 
+                  text: 'Categories',
+                  onTap: () {
                     GoRouter.of(context).push(Approuter.KCategoriesView);
-                   },
+                  },
                 ),
-                categoryListView(scrollDirection: Axis.horizontal,),
+                categoryListView(
+                  scrollDirection: Axis.horizontal,
+                ),
                 SizedBox(
                   height: 24,
                 ),
                 CustomRow(
-                  text: 'Top Selling', onTap: () {  },
+                  text: 'Top Selling',
+                  onTap: () {},
                 ),
                 SizedBox(
                   height: 16,
                 ),
-                 CustomRow(
-                  text: 'New in', onTap: () {  },
+                CustomRow(
+                  text: 'New in',
+                  onTap: () {},
                 ),
               ],
             )
