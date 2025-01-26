@@ -43,7 +43,7 @@ class Categoriesviewbody extends StatelessWidget {
                             padding: const EdgeInsets.only(right: 16, left: 8),
                             child: Image.asset(Assets.KprofileImage),
                           ),
-                          Text('data')
+                          Text('Hoodies')
                         ],
                       ),
                     ),

@@ -9,7 +9,19 @@ class Homeview extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: KBackgroundColor,
-      body:Homeviewbody() ,
+      body: Homeviewbody(),
+      bottomNavigationBar: BottomAppBar(
+        color: KBackgroundColor,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            IconButton(onPressed: () {}, icon: Icon(Icons.home_filled)),
+            IconButton(onPressed: () {}, icon: Icon(Icons.notifications)),
+            IconButton(onPressed: () {}, icon: Icon(Icons.receipt)),
+            IconButton(onPressed: () {}, icon: Icon(Icons.person)),
+          ],
+        ),
+      ),
     );
   }
 }

@@ -20,7 +20,7 @@ class _HomeviewbodyState extends State<Homeviewbody> {
     return SafeArea(
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 24),
-        child: Column(
+        child: ListView(
           children: [
             SizedBox(
               height: 24,
