@@ -55,7 +55,7 @@ class _HomeviewbodyState extends State<Homeviewbody> {
                 SizedBox(
                   height: 16,
                 ),
-                ProductCart(),
+                CustomProductListView(),
                 SizedBox(
                   height: 24,
                 ),
@@ -63,10 +63,33 @@ class _HomeviewbodyState extends State<Homeviewbody> {
                   text: 'New in',
                   onTap: () {},
                 ),
+                CustomProductListView()
               ],
             )
           ],
         ),
+      ),
+    );
+  }
+}
+
+class CustomProductListView extends StatelessWidget {
+  const CustomProductListView({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      height: 270,
+      width: double.infinity,
+      child: ListView.builder(
+        padding: EdgeInsets.zero,
+        scrollDirection: Axis.horizontal,
+        itemCount: 6,
+        itemBuilder: (context, index) {
+          return ProductCart();
+        },
       ),
     );
   }
