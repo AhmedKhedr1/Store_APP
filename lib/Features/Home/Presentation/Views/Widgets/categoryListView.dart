@@ -21,13 +21,13 @@ final Axis scrollDirection ;
                 CircleAvatar(
                   radius: 28,
                   backgroundImage: AssetImage(
-                    Assets.KNoprofileImage,
+                    Assets.KBagImage,
                   ), // Replace with your image path
                 ),
                 SizedBox(
                   height: 8,
                 ),
-                Text('Hoodies')
+                Text('Bag')
               ],
             ),
           );

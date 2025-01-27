@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:store_app/Features/Home/Presentation/Views/Widgets/CustomRow.dart';
+import 'package:store_app/Features/Home/Presentation/Views/Widgets/ProductCart.dart';
 import 'package:store_app/Features/Home/Presentation/Views/Widgets/SearchTextField.dart';
 import 'package:store_app/Features/Home/Presentation/Views/Widgets/categoryListView.dart';
 import 'package:store_app/Features/Home/Presentation/Views/Widgets/customAppBar.dart';
@@ -53,6 +54,10 @@ class _HomeviewbodyState extends State<Homeviewbody> {
                 ),
                 SizedBox(
                   height: 16,
+                ),
+                ProductCart(),
+                SizedBox(
+                  height: 24,
                 ),
                 CustomRow(
                   text: 'New in',
