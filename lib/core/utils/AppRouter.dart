@@ -2,7 +2,9 @@
 
 import 'package:go_router/go_router.dart';
 import 'package:store_app/Features/Home/Presentation/Views/CategoriesView.dart';
+import 'package:store_app/Features/Home/Presentation/Views/CategoryProductView.dart';
 import 'package:store_app/Features/Home/Presentation/Views/HomeView.dart';
+import 'package:store_app/Features/Home/Presentation/Views/ProductDetailsView.dart';
 import 'package:store_app/Features/Login/Presentation/Views/SignInView.dart';
 import 'package:store_app/Features/Login/Presentation/Views/SignupView.dart';
 import 'package:store_app/Features/Login/Presentation/Views/SplashView.dart';
@@ -14,6 +16,8 @@ abstract class Approuter {
   static const KHomeView = '/Homeview';
   static const KCategoriesView = '/Categoriesview';
   static const KSettingsView = '/Settingsview';
+  static const KCategoryproductview = '/Categoryproductview';
+  static const KProductdetailsview = '/Productdetailsview';
 
   static final GoRouter router = GoRouter(routes: [
     GoRoute(
@@ -50,6 +54,18 @@ abstract class Approuter {
       path: KSettingsView,
       builder: (context, state) {
         return Settingsview();
+      },
+    ),
+    GoRoute(
+      path: KCategoryproductview,
+      builder: (context, state) {
+        return Categoryproductview();
+      },
+    ),
+    GoRoute(
+      path: KProductdetailsview,
+      builder: (context, state) {
+        return Productdetailsview();
       },
     )
   ]);

@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:store_app/Features/Home/Presentation/Views/Widgets/CustomRow.dart';
-import 'package:store_app/Features/Home/Presentation/Views/Widgets/ProductCart.dart';
+import 'package:store_app/Features/Home/Presentation/Views/Widgets/ProductCard.dart';
 import 'package:store_app/Features/Home/Presentation/Views/Widgets/SearchTextField.dart';
 import 'package:store_app/Features/Home/Presentation/Views/Widgets/categoryListView.dart';
 import 'package:store_app/Features/Home/Presentation/Views/Widgets/customAppBar.dart';
@@ -24,7 +24,7 @@ class _HomeviewbodyState extends State<Homeviewbody> {
         child: ListView(
           children: [
             SizedBox(
-              height: 24,
+              height: 14,
             ),
             customAppBar(),
             SizedBox(
@@ -88,7 +88,7 @@ class CustomProductListView extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         itemCount: 6,
         itemBuilder: (context, index) {
-          return ProductCart();
+          return ProductCard();
         },
       ),
     );
