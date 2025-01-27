@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:store_app/Features/Home/Presentation/Views/Widgets/categoryListView.dart';
 import 'package:store_app/core/Widgets/CustomBackIcon.dart';
 import 'package:store_app/core/utils/Assets.dart';
 
@@ -41,7 +40,11 @@ class Categoriesviewbody extends StatelessWidget {
                         children: [
                           Padding(
                             padding: const EdgeInsets.only(right: 16, left: 8),
-                            child: Image.asset(Assets.KNoprofileImage),
+                            child: Container(
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(30),
+                                ),
+                                child: Image.asset(Assets.KprofileImage)),
                           ),
                           Text('Hoodies')
                         ],

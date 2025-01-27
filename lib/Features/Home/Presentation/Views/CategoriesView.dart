@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:store_app/Constant.dart';
 import 'package:store_app/Features/Home/Presentation/Views/Widgets/CategoriesviewBody.dart';
 
 class Categoriesview extends StatelessWidget {
@@ -7,6 +8,7 @@ class Categoriesview extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: KBackgroundColor,
       body: Categoriesviewbody(),
     );
   }
