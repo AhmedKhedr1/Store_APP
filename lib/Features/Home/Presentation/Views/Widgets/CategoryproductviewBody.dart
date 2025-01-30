@@ -28,7 +28,7 @@ class Categoryproductviewbody extends StatelessWidget {
         ),
         SliverToBoxAdapter(
           child: Padding(
-              padding: EdgeInsets.symmetric(horizontal: 24),
+              padding: EdgeInsets.only(right: 24, left: 24, bottom: 8),
               child: GridView.builder(
                 shrinkWrap: true,
                 physics: NeverScrollableScrollPhysics(),
@@ -42,49 +42,13 @@ class Categoryproductviewbody extends StatelessWidget {
                   mainAxisSpacing: 8,
                 ),
                 itemBuilder: (context, index) {
-                  return ProductCard();
+                  return ProductCard(
+                    OnTap: () {},
+                  );
                 },
               )),
-        )
+        ),
       ],
     );
   }
 }
-/*Padding(
-        padding: EdgeInsets.symmetric(horizontal: 24),
-        child: CustomScrollView(
-          slivers: [
-            SliverToBoxAdapter(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  SizedBox(height: 64),
-                  CustomBackIcon(),
-                  SizedBox(height: 16),
-                  Text('Hoodies',
-                      style:
-                          TextStyle(fontSize: 16, fontWeight: FontWeight.w900)),
-                  SizedBox(height: 24),
-                ],
-              ),
-            ),SliverToBoxAdapter(
-              child: Expanded(
-                    flex: 4,
-                    child: GridView.builder(
-                      physics: NeverScrollableScrollPhysics(),
-                      padding: EdgeInsets.zero,
-                      itemCount: 8,
-                      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                        crossAxisCount: 2,
-                        childAspectRatio: .61,
-                        crossAxisSpacing: 8,
-                        mainAxisSpacing: 8,
-                      ),
-                      itemBuilder: (context, index) {
-                        return ProductCard();
-                      },
-                    ),
-                  ),
-            )
-          ],
-        )); */

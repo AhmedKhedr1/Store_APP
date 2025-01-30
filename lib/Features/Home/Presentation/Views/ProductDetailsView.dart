@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:store_app/Constant.dart';
 import 'package:store_app/Features/Home/Presentation/Views/Widgets/ProductdetailsviewBody.dart';
 
 class Productdetailsview extends StatelessWidget {
@@ -7,6 +8,7 @@ class Productdetailsview extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
+      backgroundColor: KBackgroundColor,
       body: ProductdetailsviewBody(),
     );
   }
