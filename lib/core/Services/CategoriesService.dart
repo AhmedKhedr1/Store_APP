@@ -8,7 +8,7 @@ class Categoriesservice {
   Dio dio = Dio();
   Future<List<ProductModel>> getProductByCategory(
       // ignore: non_constant_identifier_names
-      {required String  CategoryName}) async {
+      {required String CategoryName}) async {
     List<dynamic> jsondata = await Api()
         .get(URL: 'https://fakestoreapi.com/products/category/$CategoryName');
     // ignore: non_constant_identifier_names

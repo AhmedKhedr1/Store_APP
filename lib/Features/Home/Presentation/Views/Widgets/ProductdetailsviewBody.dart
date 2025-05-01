@@ -16,7 +16,6 @@ class ProductdetailsviewBody extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [CustomBackIcon(), CustomFavButton()],
             ),
-            
           ],
         ),
       ),
