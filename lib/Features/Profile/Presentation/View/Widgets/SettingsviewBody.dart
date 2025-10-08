@@ -39,7 +39,7 @@ class Settingsviewbody extends StatelessWidget {
                   buttoninfo: 'Help',
                   onPressed: () {},
                 ),
-                 UserSettings(
+                UserSettings(
                   buttoninfo: 'Support',
                   onPressed: () {},
                 ),
@@ -64,4 +64,3 @@ class Settingsviewbody extends StatelessWidget {
     );
   }
 }
-

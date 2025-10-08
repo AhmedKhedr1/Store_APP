@@ -23,4 +23,5 @@ class Assets {
   static String Nike_SBimage = 'assets/images/Nike_SB.png';
   static String Nike_Windrunnerimage = 'assets/images/Nike_Windrunner.png';
   static String Nike_Unscriptedimage = 'assets/images/Nike_Unscripted.png';
+  static String arrow_right='assets/icons/arrow_right.png';
 }

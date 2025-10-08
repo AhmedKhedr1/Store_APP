@@ -12,10 +12,10 @@ class CustomProfileImage extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(right: 125, left: 125, top: 70),
       child: Container(
-        height: 80,
-        width: 80,
+        height: 94,
+        width: 94,
         decoration: BoxDecoration(borderRadius: BorderRadius.circular(40)),
-        child: Image.asset(Assets.KprofileImage),
+        child: Image.asset(Assets.KprofileImage,fit: BoxFit.cover,),
       ),
     );
   }

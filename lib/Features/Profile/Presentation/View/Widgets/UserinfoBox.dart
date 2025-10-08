@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:store_app/Constant.dart';
 
@@ -11,7 +10,7 @@ class UserinfoBox extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.fromLTRB(16, 13, 20, 8),
-      height: 96,
+      height: 105,
       width: double.infinity,
       decoration: BoxDecoration(
           color: KLightColor, borderRadius: BorderRadius.circular(8)),
@@ -22,19 +21,25 @@ class UserinfoBox extends StatelessWidget {
             children: [
               Text(
                 'Glibert Jones',
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
+              ),
+              SizedBox(
+                height: 4,
               ),
               Text(
                 'Glibert Jones001@gmail.com',
                 style: TextStyle(
-                    fontSize: 16,
+                    fontSize: 17,
                     fontWeight: FontWeight.bold,
                     color: Color(0xff8D8D8D)),
+              ),
+              SizedBox(
+                height: 4,
               ),
               Text(
                 '121-224-7890',
                 style: TextStyle(
-                    fontSize: 16,
+                    fontSize: 17,
                     fontWeight: FontWeight.bold,
                     color: Color(0xff8D8D8D)),
               )
@@ -49,7 +54,7 @@ class UserinfoBox extends StatelessWidget {
               Text(
                 'Edit',
                 style: TextStyle(
-                    fontSize: 13,
+                    fontSize: 15,
                     color: KPrimaryColor,
                     fontWeight: FontWeight.bold),
               )
