@@ -55,11 +55,11 @@ class _HomeviewbodyState extends State<Homeviewbody> {
             ),
             customAppBar(),
             SizedBox(
-              height: 24,
+              height: 14,
             ),
             SearchTextField(),
             SizedBox(
-              height: 24,
+              height: 14,
             ),
             Column(
               children: [
@@ -73,7 +73,7 @@ class _HomeviewbodyState extends State<Homeviewbody> {
                   scrollDirection: Axis.horizontal,
                 ),
                 SizedBox(
-                  height: 24,
+                  height: 14,
                 ),
                 CustomRow(
                   text: 'Top Selling',
@@ -86,7 +86,7 @@ class _HomeviewbodyState extends State<Homeviewbody> {
                   productlist: TopSellingLsit,
                 ),
                 SizedBox(
-                  height: 24,
+                  height: 14,
                 ),
                 CustomRow(
                   text: 'New in',

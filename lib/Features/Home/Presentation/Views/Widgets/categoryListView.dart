@@ -15,7 +15,7 @@ class categoryListView extends StatelessWidget {
   ];
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 100,
+      height: 108,
       width: double.infinity,
       child: ListView.builder(
         scrollDirection: scrollDirection,
@@ -26,13 +26,13 @@ class categoryListView extends StatelessWidget {
             child: Column(
               children: [
                 CircleAvatar(
-                  radius: 28,
+                  radius: 34,
                   backgroundImage: AssetImage(
                     categorylist[index].image,
                   ), // Replace with your image path
                 ),
                 SizedBox(
-                  height: 8,
+                  height: 4,
                 ),
                 Text(categorylist[index].name),
               ],
