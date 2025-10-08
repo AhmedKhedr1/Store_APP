@@ -7,10 +7,10 @@ class Assets {
   static String kGoogleLogo = 'assets/images/Google - png 0.jpg';
   static String KNoprofileImage = 'assets/images/ProfileImage.webp';
   static String KprofileImage = 'assets/images/personimage.png';
-  static String KHoodiesImage = 'assets/images/hoodies.png';
-  static String KShoesImage = 'assets/images/Shoes.png';
-  static String KShortsImage = 'assets/images/Shorts.png';
-  static String KBagImage = 'assets/images/Bag.png';
-  static String KAccessoriesImage = 'assets/images/Accessories.png';
+  static String KHoodiesImage = 'assets/Categories_images/hodies.png';
+  static String KShoesImage = 'assets/Categories_images/shoes.png';
+  static String KShortsImage = 'assets/Categories_images/shorts.png';
+  static String KBagImage = 'assets/Categories_images/bag.png';
+  static String KAccessoriesImage = 'assets/Categories_images/Accessories.png';
   static String KTestImage = 'assets/images/testitem.png';
 }

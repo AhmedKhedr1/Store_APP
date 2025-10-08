@@ -16,7 +16,9 @@ class CustomBottomAppBar extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          IconButton(onPressed: () {}, icon: Icon(Icons.home_filled)),
+          IconButton(onPressed: () {
+            GoRouter.of(context).go(Approuter.KHomeView);
+          }, icon: Icon(Icons.home_filled)),
           IconButton(onPressed: () {}, icon: Icon(Icons.notifications)),
           IconButton(onPressed: () {}, icon: Icon(Icons.receipt)),
           IconButton(onPressed: () {
