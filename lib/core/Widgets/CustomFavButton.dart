@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:store_app/core/utils/Assets.dart';
 
 class CustomFavButton extends StatelessWidget {
   const CustomFavButton({
@@ -9,9 +10,11 @@ class CustomFavButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return IconButton(
       onPressed: () {},
-      icon: Icon(
-        Icons.favorite_outline,
-        size: 26,
+      icon: Image.asset(
+        Assets.KFavourite,
+        height: 20,
+        width: 20,
+        fit: BoxFit.fill,
       ),
     );
   }

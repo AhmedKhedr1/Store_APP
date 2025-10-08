@@ -1,10 +1,9 @@
 // ignore_for_file: non_constant_identifier_names
-
 class Assets {
-  static String kLogo = 'assets/images/Rectangle 13.png';
-  static String kAppleLogo = 'assets/images/Apple svg.png';
-  static String kFaceBookLogo = 'assets/images/Facebook - png 0.png';
-  static String kGoogleLogo = 'assets/images/Google - png 0.jpg';
+  static String kLogo = 'assets/icons/logo_icon.png';
+  static String kAppleLogo = 'assets/images/Apple.png';
+  static String kFaceBookLogo = 'assets/images/Facebook.png';
+  static String kGoogleLogo = 'assets/images/Google.jpg';
   static String KNoprofileImage = 'assets/images/ProfileImage.webp';
   static String KprofileImage = 'assets/images/personimage.png';
   static String KHoodiesImage = 'assets/Categories_images/hodies.png';
@@ -12,5 +11,16 @@ class Assets {
   static String KShortsImage = 'assets/Categories_images/shorts.png';
   static String KBagImage = 'assets/Categories_images/bag.png';
   static String KAccessoriesImage = 'assets/Categories_images/Accessories.png';
-  static String KTestImage = 'assets/images/testitem.png';
+  static String KFavourite = 'assets/icons/heart.png';
+  static String KHome = 'assets/icons/home2.png';
+  static String KNotification = 'assets/icons/notificationbing.png';
+  static String KProfileicon = 'assets/icons/profile.png';
+  static String KSearch = 'assets/icons/searchnormal1.png';
+  static String KCart = 'assets/icons/Vector.png';
+  static String jacketimage = 'assets/images/jacket.png';
+  static String slidesimage = 'assets/images/MenSlides.png';
+  static String coachesimage = 'assets/images/CoachesJacket.png';
+  static String Nike_SBimage = 'assets/images/Nike_SB.png';
+  static String Nike_Windrunnerimage = 'assets/images/Nike_Windrunner.png';
+  static String Nike_Unscriptedimage = 'assets/images/Nike_Unscripted.png';
 }

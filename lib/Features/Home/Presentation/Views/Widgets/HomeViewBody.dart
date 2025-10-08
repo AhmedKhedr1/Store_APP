@@ -3,11 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:store_app/Features/Home/Presentation/Views/Widgets/CustomProductListView.dart';
 import 'package:store_app/Features/Home/Presentation/Views/Widgets/CustomRow.dart';
-import 'package:store_app/Features/Home/Presentation/Views/Widgets/ProductCard.dart';
 import 'package:store_app/Features/Home/Presentation/Views/Widgets/SearchTextField.dart';
 import 'package:store_app/Features/Home/Presentation/Views/Widgets/categoryListView.dart';
 import 'package:store_app/Features/Home/Presentation/Views/Widgets/customAppBar.dart';
+import 'package:store_app/Features/Home/data/Product_model.dart';
 import 'package:store_app/core/utils/AppRouter.dart';
+import 'package:store_app/core/utils/Assets.dart';
 
 class Homeviewbody extends StatefulWidget {
   const Homeviewbody({super.key});
@@ -18,10 +19,35 @@ class Homeviewbody extends StatefulWidget {
 
 class _HomeviewbodyState extends State<Homeviewbody> {
   @override
+  final List<ProductModel> TopSellingLsit = [
+    ProductModel(
+        image: Assets.jacketimage,
+        name: 'Men\'s Harrington Jacket',
+        price: 148.00),
+    ProductModel(
+        image: Assets.slidesimage,
+        name: 'Max Cirro Men\'s Slides',
+        price: 55.00),
+    ProductModel(
+        image: Assets.coachesimage,
+        name: 'Men\'s Coaches Jacket',
+        price: 66.97),
+  ];
+  final List<ProductModel> NewInLsit = [
+    ProductModel(
+        image: Assets.Nike_Unscriptedimage,
+        name: 'Nike Unscripted',
+        price: 120.000),
+    ProductModel(image: Assets.Nike_SBimage, name: 'Nike SB', price: 100),
+    ProductModel(
+        image: Assets.Nike_Windrunnerimage,
+        name: 'Nike Windrunner',
+        price: 52.97),
+  ];
   Widget build(BuildContext context) {
     return SafeArea(
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 24),
+        padding: const EdgeInsets.symmetric(horizontal: 12),
         child: ListView(
           children: [
             SizedBox(
@@ -56,7 +82,9 @@ class _HomeviewbodyState extends State<Homeviewbody> {
                 SizedBox(
                   height: 16,
                 ),
-                CustomProductListView(),
+                CustomProductListView(
+                  productlist: TopSellingLsit,
+                ),
                 SizedBox(
                   height: 24,
                 ),
@@ -64,7 +92,9 @@ class _HomeviewbodyState extends State<Homeviewbody> {
                   text: 'New in',
                   onTap: () {},
                 ),
-                CustomProductListView()
+                CustomProductListView(
+                  productlist: NewInLsit,
+                )
               ],
             )
           ],

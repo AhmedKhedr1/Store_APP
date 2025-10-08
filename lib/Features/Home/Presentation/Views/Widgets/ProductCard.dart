@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:store_app/Constant.dart';
+import 'package:store_app/Features/Home/data/Product_model.dart';
 import 'package:store_app/core/Widgets/CustomFavButton.dart';
-import 'package:store_app/core/utils/Assets.dart';
 
 class ProductCard extends StatelessWidget {
-   ProductCard({super.key,required this.OnTap});
-void Function() OnTap;
+  ProductCard({super.key, required this.OnTap, required this.productModel});
+  void Function() OnTap;
+  final ProductModel productModel;
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap:OnTap ,
+      onTap: OnTap,
       child: Card(
         color: KLightColor,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
@@ -25,7 +26,7 @@ void Function() OnTap;
               Stack(
                 children: [
                   Image.asset(
-                    Assets.KTestImage,
+                    productModel.image,
                     height: 200,
                     width: 154,
                   ),
@@ -40,14 +41,14 @@ void Function() OnTap;
                 height: 8,
               ),
               Text(
-                'Men\'s Harrington jacket',
+               productModel.name,
                 overflow: TextOverflow.ellipsis,
                 style: TextStyle(fontSize: 12, fontWeight: FontWeight.w400),
               ),
               SizedBox(
                 height: 4,
               ),
-              Text('\$148.00',
+              Text('\$${productModel.price}',
                   style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold))
             ],
           ),
