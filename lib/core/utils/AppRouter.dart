@@ -4,11 +4,12 @@ import 'package:go_router/go_router.dart';
 import 'package:store_app/Features/Home/Presentation/Views/CategoriesView.dart';
 import 'package:store_app/Features/Home/Presentation/Views/CategoryProductView.dart';
 import 'package:store_app/Features/Home/Presentation/Views/HomeView.dart';
+import 'package:store_app/Features/Home/Presentation/Views/Main_view.dart';
 import 'package:store_app/Features/Home/Presentation/Views/ProductDetailsView.dart';
 import 'package:store_app/Features/Login/Presentation/Views/SignInView.dart';
 import 'package:store_app/Features/Login/Presentation/Views/SignupView.dart';
 import 'package:store_app/Features/Login/Presentation/Views/SplashView.dart';
-import 'package:store_app/Features/Profile/Presentation/View/SettingsView.dart';
+import 'package:store_app/Features/Profile/Presentation/View/ProfileView.dart';
 
 abstract class Approuter {
   static const KSigninView = '/Signinview';
@@ -18,6 +19,7 @@ abstract class Approuter {
   static const KSettingsView = '/Settingsview';
   static const KCategoryproductview = '/Categoryproductview';
   static const KProductdetailsview = '/Productdetailsview';
+  static const KMainView = '/MainView';
 
   static final GoRouter router = GoRouter(routes: [
     GoRoute(
@@ -39,6 +41,12 @@ abstract class Approuter {
       },
     ),
     GoRoute(
+      path: KMainView,
+      builder: (context, state) {
+        return MainView();
+      },
+    ),
+    GoRoute(
       path: KHomeView,
       builder: (context, state) {
         return Homeview();
@@ -53,7 +61,7 @@ abstract class Approuter {
     GoRoute(
       path: KSettingsView,
       builder: (context, state) {
-        return Settingsview();
+        return ProfileView();
       },
     ),
     GoRoute(

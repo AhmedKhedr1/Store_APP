@@ -1,6 +1,7 @@
 // ignore_for_file: file_names
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:store_app/Constant.dart';
 import 'package:store_app/Features/Home/Presentation/Views/Widgets/CustomProductListView.dart';
 import 'package:store_app/Features/Home/Presentation/Views/Widgets/CustomRow.dart';
 import 'package:store_app/Features/Home/Presentation/Views/Widgets/SearchTextField.dart';
@@ -89,6 +90,7 @@ class _HomeviewbodyState extends State<Homeviewbody> {
                   height: 14,
                 ),
                 CustomRow(
+                  TextColor: KPrimaryColor,
                   text: 'New in',
                   onTap: () {},
                 ),

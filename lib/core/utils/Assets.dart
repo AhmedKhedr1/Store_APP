@@ -12,16 +12,23 @@ class Assets {
   static String KBagImage = 'assets/Categories_images/bag.png';
   static String KAccessoriesImage = 'assets/Categories_images/Accessories.png';
   static String KFavourite = 'assets/icons/heart.png';
-  static String KHome = 'assets/icons/home2.png';
-  static String KNotification = 'assets/icons/notificationbing.png';
-  static String KProfileicon = 'assets/icons/profile.png';
+  // bottom bar icons
+  static String ActiveHome = 'assets/icons/Active_home.png';
+  static String UnActiveHome = 'assets/icons/Unactive_home.png';
+  static String UnActiveNotification = 'assets/icons/notificationbing.png';
+  static String ActiveNotification = 'assets/icons/ActiveNotification.png';
+  static String UnActiveProfile = 'assets/icons/profile.png';
+  static String ActiveProfile = 'assets/icons/ActiveProfile.png';
+  static String UnActiveCart = 'assets/icons/Vector.png';
+  static String ActiveCart = 'assets/icons/ActiveCart.png';
+  //
+
   static String KSearch = 'assets/icons/searchnormal1.png';
-  static String KCart = 'assets/icons/Vector.png';
   static String jacketimage = 'assets/images/jacket.png';
   static String slidesimage = 'assets/images/MenSlides.png';
   static String coachesimage = 'assets/images/CoachesJacket.png';
   static String Nike_SBimage = 'assets/images/Nike_SB.png';
   static String Nike_Windrunnerimage = 'assets/images/Nike_Windrunner.png';
   static String Nike_Unscriptedimage = 'assets/images/Nike_Unscripted.png';
-  static String arrow_right='assets/icons/arrow_right.png';
+  static String arrow_right = 'assets/icons/arrow_right.png';
 }
