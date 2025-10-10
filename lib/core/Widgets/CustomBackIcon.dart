@@ -1,6 +1,6 @@
-
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:store_app/core/utils/Assets.dart';
 
 class CustomBackIcon extends StatelessWidget {
   const CustomBackIcon({
@@ -18,7 +18,8 @@ class CustomBackIcon extends StatelessWidget {
           onPressed: () {
             GoRouter.of(context).pop();
           },
-          icon: Icon(Icons.arrow_back_ios)),
+          icon: RotatedBox(
+              quarterTurns: 2, child: Image.asset(Assets.arrow_right))),
     );
   }
 }

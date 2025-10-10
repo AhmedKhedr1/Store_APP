@@ -1,4 +1,4 @@
-// ignore_for_file: file_names
+// ignore_for_file: file_names, non_constant_identifier_names
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:store_app/Constant.dart';
@@ -22,19 +22,27 @@ class _HomeviewbodyState extends State<Homeviewbody> {
   @override
   final List<ProductModel> TopSellingLsit = [
     ProductModel(
-        image: Assets.jacketimage,
-        name: 'Men\'s Harrington Jacket',
+        image: Assets.MenMonogramHoodie,
+        name: 'Men\'s Monogram Hoodie',
         price: 148.00),
     ProductModel(
-        image: Assets.slidesimage,
-        name: 'Max Cirro Men\'s Slides',
-        price: 55.00),
+        image: Assets.jacketimage,
+        name: 'Men\'s Harrington Jacket',
+        price: 52.97),
     ProductModel(
         image: Assets.coachesimage,
         name: 'Men\'s Coaches Jacket',
         price: 66.97),
+    ProductModel(
+        image: Assets.slidesimage,
+        name: 'Max Cirro Men\'s Slides',
+        price: 55.00),
   ];
   final List<ProductModel> NewInLsit = [
+    ProductModel(
+        image: Assets.MenPulloverBasketballHoodie,
+        name: 'Men\'s Pullover Basketball Hoodie',
+        price: 105.000),
     ProductModel(
         image: Assets.Nike_Unscriptedimage,
         name: 'Nike Unscripted',
@@ -52,11 +60,11 @@ class _HomeviewbodyState extends State<Homeviewbody> {
         child: ListView(
           children: [
             SizedBox(
-              height: 14,
+              height: 10,
             ),
             customAppBar(),
             SizedBox(
-              height: 14,
+              height: 16,
             ),
             SearchTextField(),
             SizedBox(
@@ -74,20 +82,20 @@ class _HomeviewbodyState extends State<Homeviewbody> {
                   scrollDirection: Axis.horizontal,
                 ),
                 SizedBox(
-                  height: 14,
+                  height: 10,
                 ),
                 CustomRow(
                   text: 'Top Selling',
                   onTap: () {},
                 ),
                 SizedBox(
-                  height: 16,
+                  height: 10,
                 ),
                 CustomProductListView(
                   productlist: TopSellingLsit,
                 ),
                 SizedBox(
-                  height: 14,
+                  height: 10,
                 ),
                 CustomRow(
                   TextColor: KPrimaryColor,

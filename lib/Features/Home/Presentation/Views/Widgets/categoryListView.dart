@@ -1,3 +1,5 @@
+// ignore_for_file: camel_case_types, override_on_non_overriding_member, file_names, annotate_overrides
+
 import 'package:flutter/material.dart';
 import 'package:store_app/Features/Home/data/Category_model.dart';
 import 'package:store_app/core/utils/Assets.dart';

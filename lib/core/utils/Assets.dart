@@ -22,7 +22,12 @@ class Assets {
   static String UnActiveCart = 'assets/icons/Vector.png';
   static String ActiveCart = 'assets/icons/ActiveCart.png';
   //
-
+// hoodies_images
+  static String Hoodies1 = 'assets/images/Hoodies_1.png';
+  static String Hoodies2 = 'assets/images/Hoodies_2.png';
+  static String Hoodies3 = 'assets/images/Hoodies_3.png';
+  static String Hoodies4 = 'assets/images/Hoodies_4.png';
+  //
   static String KSearch = 'assets/icons/searchnormal1.png';
   static String jacketimage = 'assets/images/jacket.png';
   static String slidesimage = 'assets/images/MenSlides.png';
@@ -31,4 +36,7 @@ class Assets {
   static String Nike_Windrunnerimage = 'assets/images/Nike_Windrunner.png';
   static String Nike_Unscriptedimage = 'assets/images/Nike_Unscripted.png';
   static String arrow_right = 'assets/icons/arrow_right.png';
+  static String MenMonogramHoodie = 'assets/images/MenMonogramHoodie.png';
+  static String MenPulloverBasketballHoodie =
+      'assets/images/MenPulloverBasketballHoodie.png';
 }
