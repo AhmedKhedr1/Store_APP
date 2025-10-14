@@ -29,14 +29,12 @@ class categoryListView extends StatelessWidget {
               children: [
                 CircleAvatar(
                   radius: 34,
-                  backgroundImage: AssetImage(
-                    categorylist[index].image,
-                  ), // Replace with your image path
+                  backgroundImage: AssetImage(categorylist[index].image),
                 ),
                 SizedBox(
                   height: 4,
                 ),
-                Text(categorylist[index].name),
+                Text(categorylist[index].name)
               ],
             ),
           );

@@ -38,9 +38,8 @@ class Categoriesviewbody extends StatelessWidget {
                 itemCount: categorylist.length,
                 itemBuilder: (context, index) {
                   return GestureDetector(
-                    onTap: () {
-                      GoRouter.of(context).push(Approuter.KCategoryproductview);
-                    },
+                    onTap: () => GoRouter.of(context)
+                        .push(Approuter.KCategoryproductview),
                     child: Padding(
                       padding: const EdgeInsets.symmetric(vertical: 8),
                       child: Container(
@@ -55,11 +54,10 @@ class Categoriesviewbody extends StatelessWidget {
                               padding:
                                   const EdgeInsets.only(right: 16, left: 8),
                               child: Container(
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(30),
-                                  ),
-                                  child:
-                                      Image.asset(categorylist[index].image)),
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(30)),
+                                child: Image.asset(categorylist[index].image),
+                              ),
                             ),
                             Text(
                               categorylist[index].name,

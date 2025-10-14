@@ -20,14 +20,10 @@ class CustomProductListView extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         itemCount: productlist.length,
         itemBuilder: (context, index) {
-          return ProductCard(
-            OnTap: () {
-              GoRouter.of(context).push(Approuter.KProductdetailsview);
-            },
-            productModel: productlist[index],
-          );
-        },
-      ),
+        return ProductCard(OnTap: () {
+          GoRouter.of(context).push(Approuter.KProductdetailsview);
+        }, productModel: productlist[index]);
+      },),
     );
   }
 }

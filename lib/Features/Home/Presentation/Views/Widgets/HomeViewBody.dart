@@ -1,4 +1,5 @@
-// ignore_for_file: file_names, non_constant_identifier_names
+// ignore_for_file: non_constant_identifier_names, override_on_non_overriding_member, annotate_overrides, file_names
+
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:store_app/Constant.dart';
@@ -70,43 +71,22 @@ class _HomeviewbodyState extends State<Homeviewbody> {
             SizedBox(
               height: 14,
             ),
-            Column(
-              children: [
-                CustomRow(
-                  text: 'Categories',
-                  onTap: () {
-                    GoRouter.of(context).push(Approuter.KCategoriesView);
-                  },
-                ),
-                categoryListView(
-                  scrollDirection: Axis.horizontal,
-                ),
-                SizedBox(
-                  height: 10,
-                ),
-                CustomRow(
-                  text: 'Top Selling',
-                  onTap: () {},
-                ),
-                SizedBox(
-                  height: 10,
-                ),
-                CustomProductListView(
-                  productlist: TopSellingLsit,
-                ),
-                SizedBox(
-                  height: 10,
-                ),
-                CustomRow(
-                  TextColor: KPrimaryColor,
-                  text: 'New in',
-                  onTap: () {},
-                ),
-                CustomProductListView(
-                  productlist: NewInLsit,
-                )
-              ],
-            )
+            CustomRow(
+              text: 'Categories',
+              onTap: () {
+                GoRouter.of(context).push(Approuter.KCategoriesView);
+              },
+            ),
+            categoryListView(scrollDirection: Axis.horizontal),
+            SizedBox(
+              height: 10,
+            ),
+            CustomRow(text: 'Top Selling', onTap: (){}),
+            SizedBox(height: 10,),
+            CustomProductListView(productlist: TopSellingLsit),
+            SizedBox(height: 10,),
+            CustomRow(text: 'New in', onTap: (){},TextColor: KPrimaryColor,),
+            CustomProductListView(productlist: NewInLsit)
           ],
         ),
       ),
