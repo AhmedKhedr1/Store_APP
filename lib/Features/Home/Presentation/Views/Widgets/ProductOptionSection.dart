@@ -16,74 +16,77 @@ class _ProductOptionSectionState extends State<ProductOptionSection> {
   int count = 1;
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        ProductOptionSelector(
-          text: 'Size',
-          trailing: Text(
-            'S',
-            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+    return Padding(
+      padding: const EdgeInsets.only(right: 20),
+      child: Column(
+        children: [
+          ProductOptionSelector(
+            text: 'Size',
+            trailing: Text(
+              'S',
+              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            ),
           ),
-        ),
-        ProductOptionSelector(
-          text: 'Color',
-          trailing: Container(
-            width: 19,
-            height: 19,
+          ProductOptionSelector(
+            text: 'Color',
+            trailing: Container(
+              width: 19,
+              height: 19,
+              decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: Color(
+                    0xffB3B68B,
+                  )),
+            ),
+          ),
+          Container(
+            margin: EdgeInsets.symmetric(vertical: 6),
+            padding: EdgeInsets.only(left: 16, right: 22, top: 8, bottom: 8),
+            width: double.infinity,
             decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                color: Color(
-                  0xffB3B68B,
-                )),
-          ),
-        ),
-        Container(
-          margin: EdgeInsets.symmetric(vertical: 6),
-          padding: EdgeInsets.only(left: 16, right: 22, top: 8, bottom: 8),
-          width: double.infinity,
-          decoration: BoxDecoration(
-              color: Color(0xffF4F4F4),
-              borderRadius: BorderRadius.circular(100)),
-          child: Row(
-            children: [
-              Text(
-                'Quantity',
-                style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 16,
-                    fontWeight: FontWeight.w500),
-              ),
-              Spacer(),
-              AddandMinusButton(
-                image: Assets.add,
-                onTap: () {
-                  setState(() {
-                    count++;
-                  });
-                },
-              ),
-              SizedBox(
-                width: 14,
-              ),
-              Text(
-                count.toString(),
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.w400),
-              ),
-              SizedBox(
-                width: 14,
-              ),
-              AddandMinusButton(
-                image: Assets.minus,
-                onTap: () {
-                  setState(() {
-                    count--;
-                  });
-                },
-              )
-            ],
-          ),
-        )
-      ],
+                color: Color(0xffF4F4F4),
+                borderRadius: BorderRadius.circular(100)),
+            child: Row(
+              children: [
+                Text(
+                  'Quantity',
+                  style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 16,
+                      fontWeight: FontWeight.w500),
+                ),
+                Spacer(),
+                AddandMinusButton(
+                  image: Assets.add,
+                  onTap: () {
+                    setState(() {
+                      count++;
+                    });
+                  },
+                ),
+                SizedBox(
+                  width: 14,
+                ),
+                Text(
+                  count.toString(),
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.w400),
+                ),
+                SizedBox(
+                  width: 14,
+                ),
+                AddandMinusButton(
+                  image: Assets.minus,
+                  onTap: () {
+                    setState(() {
+                      count--;
+                    });
+                  },
+                )
+              ],
+            ),
+          )
+        ],
+      ),
     );
   }
 }

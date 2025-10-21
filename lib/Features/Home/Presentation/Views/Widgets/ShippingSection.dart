@@ -8,27 +8,30 @@ class ShippingSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text(
-          'Shipping & Returns',
-          style: TextStyle(
-              color: Colors.black, fontSize: 19, fontWeight: FontWeight.w900),
-        ),
-        SizedBox(
-          height: 12,
-        ),
-        Text(
-          'Free standard shipping and free 60-day returns',
-          style: TextStyle(
-            color: Color(
-              0xff949494,
-            ),
-            fontSize: 14,
+    return Padding(
+      padding: const EdgeInsets.only(right: 24),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            'Shipping & Returns',
+            style: TextStyle(
+                color: Colors.black, fontSize: 19, fontWeight: FontWeight.w900),
           ),
-        ),
-      ],
+          SizedBox(
+            height: 12,
+          ),
+          Text(
+            'Free standard shipping and free 60-day returns',
+            style: TextStyle(
+              color: Color(
+                0xff949494,
+              ),
+              fontSize: 14,
+            ),
+          ),
+        ],
+      ),
     );
   }
 }

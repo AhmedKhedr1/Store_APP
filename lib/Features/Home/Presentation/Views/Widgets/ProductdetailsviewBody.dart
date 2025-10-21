@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:store_app/Constant.dart';
 import 'package:store_app/Features/Home/Presentation/Views/Widgets/ProductImagesSection.dart';
 import 'package:store_app/Features/Home/Presentation/Views/Widgets/ProductOptionSection.dart';
+import 'package:store_app/Features/Home/Presentation/Views/Widgets/RieviewsSection.dart';
 import 'package:store_app/Features/Home/Presentation/Views/Widgets/ShippingSection.dart';
 import 'package:store_app/core/Widgets/CustomBackIcon.dart';
 import 'package:store_app/core/Widgets/CustomFavButton.dart';
@@ -15,11 +16,14 @@ class ProductdetailsviewBody extends StatelessWidget {
       child: ListView(
         children: [
           Padding(
-            padding: EdgeInsets.only(right: 24, left: 24, top: 24),
+            padding: EdgeInsets.only(left: 24, top: 24),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                IconsBar(),
+                Padding(
+                  padding: const EdgeInsets.only(right: 16),
+                  child: IconsBar(),
+                ),
                 SizedBox(
                   height: 24,
                 ),
@@ -45,21 +49,28 @@ class ProductdetailsviewBody extends StatelessWidget {
                   height: 30,
                 ),
                 ProductOptionSection(),
-                 SizedBox(
+                SizedBox(
                   height: 26,
                 ),
-                Text(
-                  'Built for life and made to last, this full-zip corduroy jacket is part of our Nike Life collection. The spacious fit gives you plenty of room to layer underneath, while the soft corduroy keeps it casual and timeless.',
-                  style: TextStyle(
-                      color: Color(
-                        0xff949494,
-                      ),
-                      fontSize: 14),
+                Padding(
+                  padding: const EdgeInsets.only(right: 20),
+                  child: Text(
+                    'Built for life and made to last, this full-zip corduroy jacket is part of our Nike Life collection. The spacious fit gives you plenty of room to layer underneath, while the soft corduroy keeps it casual and timeless.',
+                    style: TextStyle(
+                        color: Color(
+                          0xff949494,
+                        ),
+                        fontSize: 14),
+                  ),
                 ),
                 SizedBox(
                   height: 24,
                 ),
-                ShippingSection()
+                ShippingSection(),
+                SizedBox(
+                  height: 24,
+                ),
+                RieviewsSection()
               ],
             ),
           ),
