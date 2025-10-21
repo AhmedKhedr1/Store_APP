@@ -81,7 +81,7 @@ class Categoryproductviewbody extends StatelessWidget {
                 return ProductCard(
                     image_height: 234,
                     OnTap: () {
-                      GoRouter.of(context).go(Approuter.KProductdetailsview);
+                      GoRouter.of(context).push(Approuter.KProductdetailsview);
                     },
                     productModel: HoodiesList[index]);
               },

@@ -30,6 +30,8 @@ class Assets {
   //
   static String KSearch = 'assets/icons/searchnormal1.png';
   static String jacketimage = 'assets/images/jacket.png';
+  static String jacketimage2 = 'assets/images/jacket2.png';
+  static String jacketimage3 = 'assets/images/jacket3.png';
   static String slidesimage = 'assets/images/MenSlides.png';
   static String coachesimage = 'assets/images/CoachesJacket.png';
   static String Nike_SBimage = 'assets/images/Nike_SB.png';
@@ -37,6 +39,8 @@ class Assets {
   static String Nike_Unscriptedimage = 'assets/images/Nike_Unscripted.png';
   static String arrow_right = 'assets/icons/arrow_right.png';
   static String MenMonogramHoodie = 'assets/images/MenMonogramHoodie.png';
-  static String MenPulloverBasketballHoodie =
-      'assets/images/MenPulloverBasketballHoodie.png';
+  static String MenPulloverBasketballHoodie ='assets/images/MenPulloverBasketballHoodie.png';
+
+  static String add='assets/icons/add.png';
+  static String minus='assets/icons/minus.png';
 }
