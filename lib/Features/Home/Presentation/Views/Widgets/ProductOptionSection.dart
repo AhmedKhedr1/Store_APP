@@ -33,6 +33,8 @@ class _ProductOptionSectionState extends State<ProductOptionSection> {
                 backgroundColor: KBackgroundColor,
                 builder: (context) => ColorAndSizePickersheet(
                   SheetTilte: 'Size',
+                  options: ['S', 'M', 'L', 'XL', '2XL'],
+                  colorsList: [],
                 ),
               );
             },
@@ -54,6 +56,14 @@ class _ProductOptionSectionState extends State<ProductOptionSection> {
                 backgroundColor: KBackgroundColor,
                 builder: (context) => ColorAndSizePickersheet(
                   SheetTilte: 'Color',
+                  options: ['Orange', 'Black', 'Red', 'Yellow', 'Blue'],
+                  colorsList: [
+                    Color(0xFFFF9800),
+                    Colors.black,
+                    Colors.red,
+                    Colors.yellow,
+                    Colors.blue,
+                  ],
                 ),
               );
             },
