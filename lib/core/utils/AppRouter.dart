@@ -1,6 +1,7 @@
 // ignore_for_file: constant_identifier_names
 
 import 'package:go_router/go_router.dart';
+import 'package:store_app/Features/Cart/Presentation/Views/Cart_View.dart';
 import 'package:store_app/Features/Home/Presentation/Views/CategoriesView.dart';
 import 'package:store_app/Features/Home/Presentation/Views/CategoryProductView.dart';
 import 'package:store_app/Features/Home/Presentation/Views/HomeView.dart';
@@ -20,6 +21,7 @@ abstract class Approuter {
   static const KCategoryproductview = '/Categoryproductview';
   static const KProductdetailsview = '/Productdetailsview';
   static const KMainView = '/MainView';
+  static const KCartView = '/CartView';
 
   static final GoRouter router = GoRouter(routes: [
     GoRoute(
@@ -74,6 +76,12 @@ abstract class Approuter {
       path: KProductdetailsview,
       builder: (context, state) {
         return Productdetailsview();
+      },
+    ),
+    GoRoute(
+      path: KCartView,
+      builder: (context, state) {
+        return CartView();
       },
     )
   ]);

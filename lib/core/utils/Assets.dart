@@ -39,8 +39,10 @@ class Assets {
   static String Nike_Unscriptedimage = 'assets/images/Nike_Unscripted.png';
   static String arrow_right = 'assets/icons/arrow_right.png';
   static String MenMonogramHoodie = 'assets/images/MenMonogramHoodie.png';
-  static String MenPulloverBasketballHoodie ='assets/images/MenPulloverBasketballHoodie.png';
+  static String MenPulloverBasketballHoodie =
+      'assets/images/MenPulloverBasketballHoodie.png';
 
-  static String add='assets/icons/add.png';
-  static String minus='assets/icons/minus.png';
+  static String add = 'assets/icons/add.png';
+  static String minus = 'assets/icons/minus.png';
+  static String cart = 'assets/images/cart.png';
 }

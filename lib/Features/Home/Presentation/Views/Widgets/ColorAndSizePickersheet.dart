@@ -93,7 +93,8 @@ class optioncard extends StatelessWidget {
               Title,
               style: TextStyle(
                   fontSize: 16,
-                  color: isSelected ? Colors.white : Colors.black),
+                  color: isSelected ? Colors.white : Colors.black,
+                  fontWeight: FontWeight.bold),
             ),
             Spacer(),
             if (color != null)
