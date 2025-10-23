@@ -10,6 +10,8 @@ import 'package:store_app/Features/Home/Presentation/Views/ProductDetailsView.da
 import 'package:store_app/Features/Login/Presentation/Views/SignInView.dart';
 import 'package:store_app/Features/Login/Presentation/Views/SignupView.dart';
 import 'package:store_app/Features/Login/Presentation/Views/SplashView.dart';
+import 'package:store_app/Features/Notifications/Presentation/Views/Notifications_View.dart';
+import 'package:store_app/Features/Orders/Presentation/Views/OrdersView.dart';
 import 'package:store_app/Features/Profile/Presentation/View/ProfileView.dart';
 
 abstract class Approuter {
@@ -22,6 +24,8 @@ abstract class Approuter {
   static const KProductdetailsview = '/Productdetailsview';
   static const KMainView = '/MainView';
   static const KCartView = '/CartView';
+  static const KNotificationsView = '/Notificationsview';
+  static const KOrdersView = '/Ordersview';
 
   static final GoRouter router = GoRouter(routes: [
     GoRoute(
@@ -82,6 +86,18 @@ abstract class Approuter {
       path: KCartView,
       builder: (context, state) {
         return CartView();
+      },
+    ),
+    GoRoute(
+      path: KNotificationsView,
+      builder: (context, state) {
+        return NotificationsView();
+      },
+    ),
+     GoRoute(
+      path: KOrdersView,
+      builder: (context, state) {
+        return Ordersview();
       },
     )
   ]);

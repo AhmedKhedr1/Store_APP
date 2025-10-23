@@ -12,7 +12,7 @@ class ProductView_BoottomBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        GoRouter.of(context).go(Approuter.KCartView);
+        GoRouter.of(context).push(Approuter.KCartView);
       },
       child: Container(
         margin: EdgeInsets.symmetric(horizontal: 24, vertical: 20),

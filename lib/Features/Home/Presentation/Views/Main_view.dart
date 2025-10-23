@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:store_app/Features/Home/Presentation/Views/HomeView.dart';
+import 'package:store_app/Features/Notifications/Presentation/Views/Notifications_View.dart';
+import 'package:store_app/Features/Orders/Presentation/Views/OrdersView.dart';
 import 'package:store_app/Features/Profile/Presentation/View/ProfileView.dart';
 import 'package:store_app/core/utils/Assets.dart';
 
@@ -15,8 +17,8 @@ class _MainViewState extends State<MainView> {
 
   final List<Widget> _screens = [
     Homeview(),
-    Homeview(),
-    Homeview(),
+    NotificationsView(),
+    Ordersview(),
     ProfileView(),
   ];
   @override

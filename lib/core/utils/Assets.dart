@@ -45,4 +45,6 @@ class Assets {
   static String add = 'assets/icons/add.png';
   static String minus = 'assets/icons/minus.png';
   static String cart = 'assets/images/cart.png';
+  static String orders = 'assets/images/orders.png';
+  static String Notifications = 'assets/images/Notifications.png';
 }
