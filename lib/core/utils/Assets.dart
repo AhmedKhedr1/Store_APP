@@ -48,5 +48,6 @@ class Assets {
   static String orders = 'assets/images/orders.png';
   static String Notifications = 'assets/images/Notifications.png';
   static String notificationbing = 'assets/images/notificationbing.png';
-  static String receipt='assets/images/receipt.png';
+  static String receipt = 'assets/images/receipt.png';
+  static String discount = 'assets/images/discountshape.png';
 }
