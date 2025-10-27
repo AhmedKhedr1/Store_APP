@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:store_app/Features/Cart/Presentation/Views/Widgets/Payment_Method.dart';
 import 'package:store_app/Features/Cart/Presentation/Views/Widgets/Payment_info.dart';
+import 'package:store_app/Features/Cart/Presentation/Views/Widgets/Shipping_Address.dart';
 import 'package:store_app/core/Widgets/CustomBackIcon.dart';
 
 class CheckoutviewBody extends StatelessWidget {
@@ -16,7 +18,7 @@ class CheckoutviewBody extends StatelessWidget {
               children: [
                 CustomBackIcon(),
                 SizedBox(
-                  width: 128,
+                  width: 100,
                 ),
                 Text(
                   'Checkout',
@@ -24,6 +26,14 @@ class CheckoutviewBody extends StatelessWidget {
                 ),
               ],
             ),
+            SizedBox(
+              height: 42,
+            ),
+            ShippingAddress(),
+            SizedBox(
+              height: 16,
+            ),
+            PaymentMethod(),
             Spacer(),
             PaymentInfo(),
             SizedBox(
