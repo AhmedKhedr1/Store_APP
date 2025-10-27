@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:store_app/Features/Cart/Presentation/Views/Widgets/CouponTextField.dart';
 import 'package:store_app/Features/Cart/Presentation/Views/Widgets/Payment_info.dart';
+import 'package:store_app/Features/Cart/Presentation/Views/Widgets/Product_info.dart';
 import 'package:store_app/Features/Login/Presentation/Views/Widgets/CustomButton.dart';
 import 'package:store_app/core/Widgets/CustomBackIcon.dart';
+import 'package:store_app/core/utils/AppRouter.dart';
 import 'package:store_app/core/utils/Assets.dart';
 
 class CartviewBody extends StatelessWidget {
@@ -53,7 +56,8 @@ class CartviewBody extends StatelessWidget {
                   height: 64,
                   width: 64,
                   fit: BoxFit.cover,
-                )
+                ),
+                ProductInfo()
               ],
             ),
           ),
@@ -69,7 +73,9 @@ class CartviewBody extends StatelessWidget {
           Center(
             child: CustomButton(
               width: double.infinity,
-              onPressed: () {},
+              onPressed: () {
+                GoRouter.of(context).push(Approuter.KCheckoutView);
+              },
               title: 'Checkout',
             ),
           )

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:store_app/Constant.dart';
-import 'package:store_app/Features/Home/Presentation/Views/Widgets/ProductView_BoottomBar.dart';
+import 'package:store_app/Features/Home/Presentation/Views/Widgets/Bottom_Nav_Button.dart';
 import 'package:store_app/Features/Home/Presentation/Views/Widgets/ProductdetailsviewBody.dart';
 
 class Productdetailsview extends StatelessWidget {
@@ -11,7 +11,10 @@ class Productdetailsview extends StatelessWidget {
     return Scaffold(
       backgroundColor: KBackgroundColor,
       body: ProductdetailsviewBody(),
-      bottomNavigationBar: ProductView_BoottomBar(),
+      bottomNavigationBar: BottomNavButton(
+        price: '\$148',
+        title: 'Add to Bag',
+      ),
     );
   }
 }

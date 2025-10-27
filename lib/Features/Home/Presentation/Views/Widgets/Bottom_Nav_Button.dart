@@ -3,11 +3,13 @@ import 'package:go_router/go_router.dart';
 import 'package:store_app/Constant.dart';
 import 'package:store_app/core/utils/AppRouter.dart';
 
-class ProductView_BoottomBar extends StatelessWidget {
-  const ProductView_BoottomBar({
+class BottomNavButton extends StatelessWidget {
+  const BottomNavButton({
     super.key,
+    required this.price,
+    required this.title,
   });
-
+  final String price, title;
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -24,7 +26,7 @@ class ProductView_BoottomBar extends StatelessWidget {
         child: Row(
           children: [
             Text(
-              '\$148',
+              price,
               style: TextStyle(
                   fontSize: 16,
                   fontWeight: FontWeight.bold,
@@ -32,7 +34,7 @@ class ProductView_BoottomBar extends StatelessWidget {
             ),
             Spacer(),
             Text(
-              'Add to Bag',
+              title,
               style: TextStyle(
                   fontSize: 16,
                   fontWeight: FontWeight.w500,
