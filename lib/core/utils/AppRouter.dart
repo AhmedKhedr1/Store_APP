@@ -3,6 +3,7 @@
 import 'package:go_router/go_router.dart';
 import 'package:store_app/Features/Cart/Presentation/Views/Cart_View.dart';
 import 'package:store_app/Features/Cart/Presentation/Views/Checkout_View.dart';
+import 'package:store_app/Features/Cart/Presentation/Views/Order_Placed_View.dart';
 import 'package:store_app/Features/Home/Presentation/Views/CategoriesView.dart';
 import 'package:store_app/Features/Home/Presentation/Views/CategoryProductView.dart';
 import 'package:store_app/Features/Home/Presentation/Views/HomeView.dart';
@@ -28,6 +29,8 @@ abstract class Approuter {
   static const KNotificationsView = '/Notificationsview';
   static const KOrdersView = '/Ordersview';
   static const KCheckoutView = '/CheckoutView';
+    static const KOrderPlacedView = '/OrderPlacedView';
+
 
   static final GoRouter router = GoRouter(routes: [
     GoRoute(
@@ -106,6 +109,12 @@ abstract class Approuter {
       path: KCheckoutView,
       builder: (context, state) {
         return CheckoutView();
+      },
+    ),
+     GoRoute(
+      path: KOrderPlacedView,
+      builder: (context, state) {
+        return OrderPlacedView();
       },
     )
   ]);

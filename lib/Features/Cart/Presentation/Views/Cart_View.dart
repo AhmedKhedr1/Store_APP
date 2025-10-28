@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:store_app/Constant.dart';
 import 'package:store_app/Features/Cart/Presentation/Views/Widgets/CartView_Body.dart';
+import 'package:store_app/core/utils/Assets.dart';
 
 class CartView extends StatelessWidget {
   const CartView({super.key});
@@ -13,3 +14,57 @@ class CartView extends StatelessWidget {
     );
   }
 }
+
+class arrowButton extends StatelessWidget {
+  const arrowButton({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+        height: 40,
+        width: 40,
+        decoration: BoxDecoration(color: KPrimaryColor, shape: BoxShape.circle),
+        child: Image.asset(
+          Assets.arrow_right,
+          color: Colors.white,
+          height: 12,
+          width: 12,
+        ));
+  }
+}
+
+/*
+  CustomBackIcon(),
+          Spacer(),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Column(
+                children: [
+                  Image.asset(
+                    Assets.cart,
+                    fit: BoxFit.cover,
+                  ),
+                  SizedBox(
+                    height: 24,
+                  ),
+                  Text(
+                    'Your Cart is Empty',
+                    style: TextStyle(fontSize: 24, fontWeight: FontWeight.w700),
+                  ),
+                  SizedBox(
+                    height: 24,
+                  ),
+                  TextButton(
+                      style: TextButton.styleFrom(
+                        backgroundColor: KPrimaryColor,
+                        foregroundColor: Colors.white,
+                        minimumSize: Size(200, 54),
+                      ),
+                      onPressed: () {},
+                      child: Text('Explore Categories',
+                          style: TextStyle(fontSize: 16)))
+                ],
+ */

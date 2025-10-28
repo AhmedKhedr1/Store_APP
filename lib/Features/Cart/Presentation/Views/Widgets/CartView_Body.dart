@@ -28,7 +28,7 @@ class CartviewBody extends StatelessWidget {
               Text(
                 'Cart',
                 style: TextStyle(fontSize: 18, fontWeight: FontWeight.w900),
-              ),
+              )
             ],
           ),
           SizedBox(
@@ -72,10 +72,10 @@ class CartviewBody extends StatelessWidget {
           ),
           Center(
             child: CustomButton(
-              width: double.infinity,
               onPressed: () {
                 GoRouter.of(context).push(Approuter.KCheckoutView);
               },
+              width: double.infinity,
               title: 'Checkout',
             ),
           )
@@ -84,37 +84,3 @@ class CartviewBody extends StatelessWidget {
     ));
   }
 }
-
-/*
-  CustomBackIcon(),
-          Spacer(),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Column(
-                children: [
-                  Image.asset(
-                    Assets.cart,
-                    fit: BoxFit.cover,
-                  ),
-                  SizedBox(
-                    height: 24,
-                  ),
-                  Text(
-                    'Your Cart is Empty',
-                    style: TextStyle(fontSize: 24, fontWeight: FontWeight.w700),
-                  ),
-                  SizedBox(
-                    height: 24,
-                  ),
-                  TextButton(
-                      style: TextButton.styleFrom(
-                        backgroundColor: KPrimaryColor,
-                        foregroundColor: Colors.white,
-                        minimumSize: Size(200, 54),
-                      ),
-                      onPressed: () {},
-                      child: Text('Explore Categories',
-                          style: TextStyle(fontSize: 16)))
-                ],
- */

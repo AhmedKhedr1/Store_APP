@@ -1,21 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
 import 'package:store_app/Constant.dart';
-import 'package:store_app/core/utils/AppRouter.dart';
 
 class BottomNavButton extends StatelessWidget {
   const BottomNavButton({
     super.key,
     required this.price,
-    required this.title,
+    required this.title, required this.onTap,
   });
   final String price, title;
+  final Function() onTap;
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {
-        GoRouter.of(context).push(Approuter.KCartView);
-      },
+      onTap: onTap,
       child: Container(
         margin: EdgeInsets.symmetric(horizontal: 24, vertical: 20),
         padding: EdgeInsets.symmetric(horizontal: 24, vertical: 16),
