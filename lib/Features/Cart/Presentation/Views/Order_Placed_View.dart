@@ -16,20 +16,18 @@ class OrderPlacedView extends StatelessWidget {
             height: 150,
           ),
           Expanded(
-            child: Container(
-                decoration: BoxDecoration(color: KPrimaryColor),
-                child: Image.asset(
-                  Assets.OrderPlacedSuccessfully,
-                )),
-          ),
+              child: Container(
+            decoration: BoxDecoration(color: KPrimaryColor),
+            child: Image.asset(Assets.OrderPlacedSuccessfully),
+          )),
           Container(
             height: 370,
             width: double.infinity,
             decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.only(
-                    topRight: Radius.circular(32),
-                    topLeft: Radius.circular(32))),
+                    topLeft: Radius.circular(32),
+                    topRight: Radius.circular(32))),
             child: Column(
               children: [
                 SizedBox(
@@ -47,18 +45,19 @@ class OrderPlacedView extends StatelessWidget {
                 SizedBox(
                   height: 25,
                 ),
-                Text(
-                  'You will recieve an email confirmation',
-                  style: TextStyle(color: Color(0xff8E8E8E), fontSize: 16),
+                Text('You will recieve an email confirmation',
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Color(0xff8e8e8e)
+                ),
                 ),
                 SizedBox(
                   height: 78,
                 ),
-                CustomButton(
-                  onPressed: () {},
-                  height: 52,
-                  width: 342,
-                  title: 'See Order details',
+                CustomButton(onPressed: (){},
+                height: 52,
+                width: 342,
+                title: 'See Order details',
                 )
               ],
             ),

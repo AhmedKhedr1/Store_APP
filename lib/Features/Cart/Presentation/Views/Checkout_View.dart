@@ -5,6 +5,7 @@ import 'package:store_app/Features/Cart/Presentation/Views/Widgets/CheckoutView_
 import 'package:store_app/Features/Home/Presentation/Views/Widgets/Bottom_Nav_Button.dart';
 import 'package:store_app/core/utils/AppRouter.dart';
 
+
 class CheckoutView extends StatelessWidget {
   const CheckoutView({super.key});
 
@@ -13,10 +14,11 @@ class CheckoutView extends StatelessWidget {
     return Scaffold(
       backgroundColor: KBackgroundColor,
       body: CheckoutviewBody(),
-      bottomNavigationBar:
-          BottomNavButton(price: '\$208', title: 'Place Order', onTap: () { 
-            GoRouter.of(context).push(Approuter.KOrderPlacedView);
-           },),
+      bottomNavigationBar:BottomNavButton(price: '\$208',
+       title: 'Place Order',
+        onTap:(){
+          GoRouter.of(context).push(Approuter.KOrderPlacedView);
+        } ) 
     );
   }
 }

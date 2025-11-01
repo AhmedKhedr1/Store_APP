@@ -38,7 +38,7 @@ class ShippingAddress extends StatelessWidget {
                   ),
                   SizedBox(
                     width: 80,
-                  ),
+                  )
                 ],
               )
             ],

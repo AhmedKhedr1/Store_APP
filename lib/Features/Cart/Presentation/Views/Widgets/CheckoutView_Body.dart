@@ -23,7 +23,7 @@ class CheckoutviewBody extends StatelessWidget {
                 Text(
                   'Checkout',
                   style: TextStyle(fontSize: 18, fontWeight: FontWeight.w900),
-                ),
+                )
               ],
             ),
             SizedBox(
@@ -35,13 +35,19 @@ class CheckoutviewBody extends StatelessWidget {
             ),
             PaymentMethod(),
             Spacer(),
-            PaymentInfo(),
-            SizedBox(
-              height: 75,
-            )
+            PaymentInfo()
           ],
         ),
       ),
     );
   }
 }
+/*
+BottomNavButton(
+        price: '\$208',
+        title: 'Place Order',
+        onTap: () {
+          GoRouter.of(context).push(Approuter.KOrderPlacedView);
+        },
+      ),
+ */
