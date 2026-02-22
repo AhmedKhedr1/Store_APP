@@ -45,19 +45,18 @@ class OrderPlacedView extends StatelessWidget {
                 SizedBox(
                   height: 25,
                 ),
-                Text('You will recieve an email confirmation',
-                style: TextStyle(
-                  fontSize: 16,
-                  color: Color(0xff8e8e8e)
-                ),
+                Text(
+                  'You will recieve an email confirmation',
+                  style: TextStyle(fontSize: 16, color: Color(0xff8e8e8e)),
                 ),
                 SizedBox(
                   height: 78,
                 ),
-                CustomButton(onPressed: (){},
-                height: 52,
-                width: 342,
-                title: 'See Order details',
+                CustomButton(
+                  onPressed: () {},
+                  height: 52,
+                  width: 342,
+                  title: 'See Order details',
                 )
               ],
             ),

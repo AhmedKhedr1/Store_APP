@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:store_app/Features/Profile/Presentation/View/Widgets/CustomProfileImage.dart';
-import 'package:store_app/Features/Profile/Presentation/View/Widgets/UserSettings.dart';
+import 'package:store_app/Features/Profile/Presentation/View/Widgets/SettingsTile.dart';
 import 'package:store_app/Features/Profile/Presentation/View/Widgets/UserinfoBox.dart';
 
-class Settingsviewbody extends StatelessWidget {
-  const Settingsviewbody({super.key});
+class Profileviewbody extends StatelessWidget {
+  const Profileviewbody({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -23,28 +23,28 @@ class Settingsviewbody extends StatelessWidget {
                 SizedBox(
                   height: 26,
                 ),
-                UserSettings(
+                SettingsTile(
                   buttoninfo: 'Address',
                   onPressed: () {},
                 ),
-                UserSettings(
+                SettingsTile(
                   buttoninfo: 'Wishlist',
                   onPressed: () {},
                 ),
-                UserSettings(
+                SettingsTile(
                   buttoninfo: 'Payment',
                   onPressed: () {},
                 ),
-                UserSettings(
+                SettingsTile(
                   buttoninfo: 'Help',
                   onPressed: () {},
                 ),
-                UserSettings(
+                SettingsTile(
                   buttoninfo: 'Support',
                   onPressed: () {},
                 ),
                 SizedBox(
-                  height: 35,
+                  height: 36,
                 ),
                 GestureDetector(
                   onTap: () {},

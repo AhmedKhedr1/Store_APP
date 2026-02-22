@@ -22,3 +22,34 @@ class NotificationsView extends StatelessWidget {
     );
   }
 }
+/* Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.asset(Assets.Notifications),
+            SizedBox(
+              height: 24,
+            ),
+            Text(
+              'No Notification yet',
+              style: TextStyle(fontSize: 24, fontWeight: FontWeight.w500),
+            ),
+            SizedBox(
+              height: 24,
+            ),
+            TextButton(
+                style: TextButton.styleFrom(
+                    backgroundColor: KPrimaryColor,
+                    foregroundColor: Colors.white,
+                    minimumSize: Size(200, 54)),
+                onPressed: () {},
+                child: Text(
+                  'Explore Categories',
+                  style: TextStyle(fontSize: 16),
+                ))
+          ],
+        ),
+      ],
+    ); */

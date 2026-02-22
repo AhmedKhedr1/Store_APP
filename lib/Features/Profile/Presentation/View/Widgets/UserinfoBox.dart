@@ -27,11 +27,11 @@ class UserinfoBox extends StatelessWidget {
                 height: 4,
               ),
               Text(
-                'Glibert Jones001@gmail.com',
+                'GlibertJones001@gmail.com',
                 style: TextStyle(
                     fontSize: 17,
                     fontWeight: FontWeight.bold,
-                    color: Color(0xff8D8D8D)),
+                    color: Color(0xff8d8d8d)),
               ),
               SizedBox(
                 height: 4,
@@ -41,7 +41,7 @@ class UserinfoBox extends StatelessWidget {
                 style: TextStyle(
                     fontSize: 17,
                     fontWeight: FontWeight.bold,
-                    color: Color(0xff8D8D8D)),
+                    color: Color(0xff8d8d8d)),
               )
             ],
           ),

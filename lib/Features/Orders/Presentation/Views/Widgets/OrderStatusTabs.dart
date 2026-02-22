@@ -33,6 +33,7 @@ class _OrderStatusTabsState extends State<OrderStatusTabs> {
               });
             },
             child: Container(
+              margin: EdgeInsets.all(2),
               padding: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
               decoration: BoxDecoration(
                   color: isSelected ? KPrimaryColor : Color(0xffF4F4F4),

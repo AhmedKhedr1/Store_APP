@@ -29,8 +29,7 @@ abstract class Approuter {
   static const KNotificationsView = '/Notificationsview';
   static const KOrdersView = '/Ordersview';
   static const KCheckoutView = '/CheckoutView';
-    static const KOrderPlacedView = '/OrderPlacedView';
-
+  static const KOrderPlacedView = '/OrderPlacedView';
 
   static final GoRouter router = GoRouter(routes: [
     GoRoute(
@@ -111,7 +110,7 @@ abstract class Approuter {
         return CheckoutView();
       },
     ),
-     GoRoute(
+    GoRoute(
       path: KOrderPlacedView,
       builder: (context, state) {
         return OrderPlacedView();
